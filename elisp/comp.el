@@ -18,6 +18,23 @@
   :config
   (add-hook 'after-init-hook 'global-company-mode))
 
+(use-package lsp-mode
+  :ensure t
+  :init
+  (setq lsp-keymap-prefix "C-c l")
+  :config
+  (lsp-enable-which-key-integration t))
+
+(use-package lsp-ui :commands lsp-ui-mode
+  :init
+  (setq lsp-ui-doc-enable t)
+  (setq lsp-ui-doc-show-with-cursor nil)
+  (setq lsp-ui-doc-delay 3)
+  (setq lsp-ui-doc-show-with-mouse t))
+
+(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
+(use-package lsp-treemacs :commands lsp-treemacs-errors-list)
+
 (use-package which-key
   :defer 0
   :diminish which-key-mode
