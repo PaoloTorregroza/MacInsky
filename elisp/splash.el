@@ -11,4 +11,12 @@
   (setq dashboard-startup-banner "~/.emacs.d/logo/pao.txt")
   (dashboard-setup-startup-hook))
 
+;; Set startup window size
+(when (or window-system (daemonp))
+  (setq default-frame-alist '(
+                              (width . 135)
+                              (height . 47)
+ ))
+)
+
 (provide 'splash)
