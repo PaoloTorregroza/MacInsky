@@ -15,4 +15,20 @@
   :config
   (counsel-projectile-mode))
 
+;; Tabs
+
+(use-package centaur-tabs
+  :demand
+  :config
+  (centaur-tabs-mode t)
+  (setq centaur-tabs-style "box")
+  (setq centaur-tabs-set-icons t)
+  (setq centaur-tabs-set-bar 'under)
+  (setq x-underline-at-descent-line t)
+  (setq centaur-tabs-set-modified-marker t)
+  (centaur-tabs-group-by-projectile-project) ;; Group tabs by projectile project
+  :bind
+  ("<M-right>" . centaur-tabs-forward)
+  ("<M-left>" . centaur-tabs-backward))
+
 (provide 'workspace)

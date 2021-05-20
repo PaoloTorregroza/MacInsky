@@ -1,5 +1,5 @@
 ;; Set default font size
-(defvar pao/default-font-size 110)
+(defvar pao/default-font-size 100)
 (set-face-attribute 'default nil :height pao/default-font-size :font "FiraCode Nerd Font")
 
 ;; Custom file
@@ -49,5 +49,16 @@
 
 ;; Hide toolbar
 (tool-bar-mode -1)
+
+;; Set smooth scroll
+;; scroll one line at a time (less "jumpy" than defaults)
+
+(setq mouse-wheel-scroll-amount '(2 ((shift) . 2))) ;; one line at a time
+
+(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+
+(setq scroll-step 1) ;; keyboard scroll one line at a time
 
 (provide 'base)
