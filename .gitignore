@@ -4,3 +4,4 @@ elpa
 custom.el
 projectile-bookmarks.eld
 recentf
+.lsp-session*
