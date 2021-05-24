@@ -12,6 +12,12 @@
 
 ## Installation
 
+### Requeriments
+
+- FiraCode Nerd Font
+- node (not nvm)
+- emacs >= 26 (Not tested in older versions)
+
 ### - Base config
 
 Clone the content of the repo in your .emacs.d folder, if you don't have it... Create it! (or just use this command)
@@ -25,6 +31,13 @@ It is a good idea to have a backup of your current config, this step is optional
 ```
 mv ~/.emacs.d ~/.emacs.d.bkp
 ```
+
+#### - For windows users
+
+In windows is a bit tricky. You need to clone this repo in your "HOME" directory, for find ho is your HOME directory you can type ``C-x C-f ~/.emacs`` it will show where you have to clone the repo.
+
+For the fonts you need to run ``M-x all-the-icons-install-fonts`` select a place to download and then install them with double click.
+
 
 ### - Language Servers
 

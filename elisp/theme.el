@@ -25,4 +25,6 @@
 (load-theme 'doom-rouge t)
 ;; I like doom-acario-dark, doom-gruvbox, doom-vibrant, doom-rogue
 
+(use-package all-the-icons)
+
 (provide 'theme)
