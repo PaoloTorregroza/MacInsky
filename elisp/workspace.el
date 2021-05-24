@@ -16,12 +16,11 @@
   (counsel-projectile-mode))
 
 ;; Tabs
-
 (use-package centaur-tabs
   :demand
   :config
   (centaur-tabs-mode t)
-  (setq centaur-tabs-style "bar")
+  (setq centaur-tabs-style "box")
   (setq centaur-tabs-set-icons t)  (setq centaur-tabs-set-modified-marker t)
   (centaur-tabs-group-by-projectile-project) ;; Group tabs by projectile project
   (setq centaur-tabs-set-bar 'under)

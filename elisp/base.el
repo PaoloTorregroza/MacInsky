@@ -1,5 +1,5 @@
 ;; Set default font size
-(defvar pao/default-font-size 100)
+(defvar pao/default-font-size 110)
 (set-face-attribute 'default nil :height pao/default-font-size :font "FiraCode Nerd Font")
 
 ;; Custom file

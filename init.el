@@ -13,6 +13,9 @@
 ;; Completion
 (require 'comp)
 
+;; Programming lang servers setup
+(require 'langs)
+
 ;; Project management
 (require 'workspace)
 
