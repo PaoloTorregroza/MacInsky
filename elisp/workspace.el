@@ -29,4 +29,8 @@
   ("<M-right>" . centaur-tabs-forward)
   ("<M-left>" . centaur-tabs-backward))
 
+
+;; Search in files
+(use-package helm-ag)
+
 (provide 'workspace)
