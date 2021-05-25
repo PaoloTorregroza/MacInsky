@@ -62,6 +62,9 @@
 ;; Hide menu bar
 (menu-bar-mode -1)
 
+;; Disable lock files...
+(setq create-lockfiles nil) ;; Lock files fucked one of my projects
+
 ;; Set smooth scroll
 ;; scroll one line at a time (less "jumpy" than defaults)
 
