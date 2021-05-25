@@ -1,6 +1,8 @@
 ;; Set default font size
 (defvar pao/default-font-size 110)
-(set-face-attribute 'default nil :height pao/default-font-size :font "FiraCode Nerd Font")
+(set-face-attribute 'default nil
+  :height pao/default-font-size
+  :font "FiraCode Nerd Font")
 
 ;; Custom file
 (defvar pao/custom-file (expand-file-name "custom.el" user-emacs-directory))
@@ -21,6 +23,10 @@
 
 ; (defconst private-dir  (expand-file-name "private" user-emacs-directory))
 ; (defconst temp-dir (format "%s/cache" private-dir) "elisp temp directories")
+
+;; For windows users
+(set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8)
 
 ;; Emacs customizations
 (setq custom-file                        pao/custom-file
