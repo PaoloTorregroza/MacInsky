@@ -45,6 +45,9 @@
 ;; Show matching parentheses
 (show-paren-mode 1)
 
+;; Use spaces, not tabs
+(setq-default indent-tabs-mode nil)
+
 ;; Need to load custom file to avoid being overwritten
 ;; more at https://www.gnu.org/software/emacs/manual/html_node/emacs/Saving-Customizations.html
 (if (file-exists-p pao/custom-file)
@@ -55,6 +58,9 @@
 
 ;; Hide toolbar
 (tool-bar-mode -1)
+
+;; Hide menu bar
+(menu-bar-mode -1)
 
 ;; Set smooth scroll
 ;; scroll one line at a time (less "jumpy" than defaults)
