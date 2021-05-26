@@ -23,7 +23,7 @@
 
 (require 'doom-themes)
 (load-theme 'doom-rouge t)
-;; I like doom-acario-dark, doom-gruvbox, doom-vibrant, doom-rogue
+;; I like doom-acario-dark, doom-gruvbox, doom-vibrant, doom-rouge
 
 (use-package all-the-icons)
 
