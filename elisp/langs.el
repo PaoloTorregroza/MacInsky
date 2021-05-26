@@ -31,4 +31,13 @@
   :mode "\\.js\\'"
   :hook (js2-mode . lsp-deferred))
 
+;; CSS
+(use-package css-mode ;; This dude is auto enabled in CSS, SASS, LessCSS and SCSS
+  :hook (css-mode . lsp-deferred))
+
+;; HTML
+;; web-mode is not only for html, work whit great part of tempalte engines see web-mode.org
+(use-package web-mode ;; Same as CSS, auto enabled in HTML files
+  :hook (html-mode . lsp-deferred))
+
 (provide 'langs)

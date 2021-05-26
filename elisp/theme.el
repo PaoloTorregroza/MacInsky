@@ -16,14 +16,18 @@
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
 
-(use-package powerline
-	     :ensure t
-	     :config
-	     (powerline-default-theme))
-
 (require 'doom-themes)
 (load-theme 'doom-rouge t)
 ;; I like doom-acario-dark, doom-gruvbox, doom-vibrant, doom-rouge
+
+(use-package smart-mode-line
+  :config
+  (setq rm-blacklist
+        (format "^ \\(%s\\)$"
+              (mapconcat #'identity
+                         '("ivy" "Projectile.*" "ElDoc" "company-box" "PgLn" "company" "LSP.*" "WK")
+                         "\\|"))))
+(rich-minority-mode 1) ;; Hides minor-modes
 
 (use-package all-the-icons)
 

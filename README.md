@@ -49,6 +49,12 @@ For the fonts you need to run ``M-x all-the-icons-install-fonts`` select a place
 
 **IMPORTANT**: After hours of work whit nvm (Node version manager) I find that LSP is not compatible whit it, so if you want to have this working use a normal installation of node on your pc
 
+ - WEB (HTML/CSS)
+
+ ```
+ sudo npm i -g vscode-html-languageserver-bin vscode-css-languageserver-bin
+ ```
+
 ## File distribution
 
 	- Elisp
@@ -62,7 +68,6 @@ For the fonts you need to run ``M-x all-the-icons-install-fonts`` select a place
 		- vcs.el           // Working on...
 		- vim.el           // GO EVIL (vim config)
 		- workspace.el     // Workspace configurations (tabs, projects, etc...)
-
 
 ## Todo
 
